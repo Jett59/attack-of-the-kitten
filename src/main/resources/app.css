@@ -1,0 +1,23 @@
+.background {
+    -fx-background-color: BLUE;
+}
+.timer {
+    -fx-font-size: 50;
+}
+.floor {
+    -fx-fill: GREEN;
+}
+.gameOverText {
+    -fx-font-size: 75;
+    -fx-font-color: RED;
+}
+.retryButton {
+-fx-pref-height: 56;
+}
+.healthBar {
+    -fx-control-inner-background: red;
+    -fx-accent: palegreen;
+}
+.damageLasor {
+    -fx-fill: red;
+}
