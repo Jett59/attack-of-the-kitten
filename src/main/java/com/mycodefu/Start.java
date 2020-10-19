@@ -6,16 +6,9 @@ import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.mycodefu.animation.GameLoopAnimation;
 import com.mycodefu.game.GameListener;
+import com.mycodefu.game.GameLoopAnimation;
 import com.mycodefu.game.GameObject;
-import com.mycodefu.game.floor.FloorGameObject;
-import com.mycodefu.game.health.HealthGameObject;
-import com.mycodefu.game.lasor.LasorGameObject;
-import com.mycodefu.game.over.GameOverGameObject;
-import com.mycodefu.game.player.PlayerGameObject;
-import com.mycodefu.game.timer.TimerGameObject;
-
 import javafx.application.Application;
 import javafx.scene.Group;
 import javafx.scene.Scene;
@@ -26,12 +19,7 @@ import javafx.stage.Stage;
 public class Start extends Application {
 	public static double screenWidth = 1024, screenHeight = 768;
 	private static GameObject[] objects = new GameObject[] {
-			new PlayerGameObject(),
-			new TimerGameObject(),
-			new FloorGameObject(),
-			new HealthGameObject(),
-			new LasorGameObject(),
-			new GameOverGameObject()
+			
 	};
 	private static List<Runnable> listeners = new ArrayList<>();
 	private static List<GameListener<GameObject>> gameListeners = new ArrayList<>();
